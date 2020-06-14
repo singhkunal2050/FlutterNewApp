@@ -22,14 +22,21 @@ class NewApp extends StatelessWidget {
               'Kunal Lorem19',
               style: TextStyle(
                 backgroundColor: Colors.deepOrange,
-                fontSize: 58,
+                fontSize: 28,
                 fontWeight: FontWeight.w800,
                 letterSpacing: 2,
                 color: Colors.deepPurple,
                 fontFamily: 'IndieFlower',
               ),
             ),
-            Text("Another one"),
+            // Text("Another one"),
+            Icon(
+              Icons.access_alarm,
+              color: Colors.red,
+              size:80,
+            ),
+            Icon(Icons.add_circle),
+            Icon(Icons.add_location),
             // Image(
             //     image: NetworkImage(
             //         'https://images.unsplash.com/photo-1589609966838-5c628d5c1aa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')),
