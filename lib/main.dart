@@ -29,7 +29,7 @@ class NewApp extends StatelessWidget {
                 fontFamily: 'IndieFlower',
               ),
             ),
-            Text("Anotther one"),
+            Text("Another one"),
             // Image(
             //     image: NetworkImage(
             //         'https://images.unsplash.com/photo-1589609966838-5c628d5c1aa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')),
