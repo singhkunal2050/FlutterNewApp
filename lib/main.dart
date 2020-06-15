@@ -19,7 +19,7 @@ class NewApp extends StatelessWidget {
         body: Container(
           color: Colors.amber,
           // margin: EdgeInsets.all(10),
-          margin: EdgeInsets.fromLTRB(5, 10, 15, 20),
+          margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
           padding: EdgeInsets.symmetric(
             horizontal: 10,
             vertical: 10,
@@ -37,6 +37,7 @@ class NewApp extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Icon(
                     Icons.access_alarm,
