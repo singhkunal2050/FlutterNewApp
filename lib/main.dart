@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './MystyleText.dart';
 
 void main(List<String> args) {
   runApp(NewApp());
@@ -20,40 +21,43 @@ class NewApp extends StatelessWidget {
           // margin: EdgeInsets.all(10),
           margin: EdgeInsets.fromLTRB(5, 10, 15, 20),
           padding: EdgeInsets.symmetric(
-            horizontal: 100,
-            vertical: 50,
+            horizontal: 10,
+            vertical: 10,
           ),
           child: Center(
               child: Column(
             children: [
-              Text(
-                'Kunal Lorem19',
-                style: TextStyle(
-                  backgroundColor: Colors.deepOrange,
-                  fontSize: 28,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 2,
-                  color: Colors.deepPurple,
-                  fontFamily: 'IndieFlower',
+              MystyleText(),
+              Padding(
+                child: Text(
+                  "padding is an alternative to container if u dont need margins",
+                  style: TextStyle(fontSize: 20),
                 ),
+                padding: EdgeInsets.all(40),
               ),
-              // Text("Another one"),
-              Icon(
-                Icons.access_alarm,
-                color: Colors.red,
-                size: 80,
-              ),
-              RaisedButton(
-                onPressed: () => print("pressed"),
-                child: Text("Press"),
-                color: Colors.amberAccent,
-              ),
-              RaisedButton.icon(
-                onPressed: () => print("pressed 2"),
-                icon: Icon(
-                  Icons.mail,
-                ),
-                label: Text("Send"),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Icon(
+                    Icons.access_alarm,
+                    color: Colors.red,
+                    size: 80,
+                  ),
+                  RaisedButton(
+                    onPressed: () => print("pressed"),
+                    child: Text("Press"),
+                    color: Colors.amberAccent,
+                  ),
+                  RaisedButton.icon(
+                    onPressed: () => print("pressed 2"),
+                    icon: Icon(
+                      Icons.mail,
+                    ),
+                    label: Text("Send"),
+                  ),
+                  // Icon(Icons.add_circle),
+                  // Icon(Icons.add_location),
+                ],
               ),
               FlatButton(
                 onPressed: () => print("pressed 3"),
@@ -69,14 +73,13 @@ class NewApp extends StatelessWidget {
                 ),
                 onPressed: () => print('YAYYYYYYYYYyy'),
               ),
-              // Icon(Icons.add_circle),
-              // Icon(Icons.add_location),
+
               // Image(
               //     image: NetworkImage(
               //         'https://images.unsplash.com/photo-1589609966838-5c628d5c1aa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')),
               Image(
                 image: AssetImage('assets/champs.jpg'),
-                height: 156,
+                height: 106,
               ),
               // short hand for upper syntax
               // Image.asset('assets/comp.jpg'),
@@ -103,3 +106,4 @@ class NewApp extends StatelessWidget {
 // also work on flutter extentions lovely features to shorten the code
 // flatbutton has no shadow
 // raisedbutton has shadow
+// we  can apply only padding prop to a padding widget
