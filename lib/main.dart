@@ -12,7 +12,7 @@ class NewApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("KSR"),
-          backgroundColor: Colors.amber[700],
+          backgroundColor: Colors.pink[700],
           centerTitle: true,
         ),
         body: Center(
@@ -33,18 +33,38 @@ class NewApp extends StatelessWidget {
             Icon(
               Icons.access_alarm,
               color: Colors.red,
-              size:80,
+              size: 80,
             ),
-            Icon(Icons.add_circle),
-            Icon(Icons.add_location),
+            RaisedButton(
+              onPressed: () => print("pressed"),
+              child: Text("Press"),
+              color: Colors.amberAccent,
+            ),
+            RaisedButton.icon(
+              onPressed: () => print("pressed 2"),
+              icon: Icon(
+                Icons.mail,
+              ),
+              label: Text("Send"),
+            ),
+            FlatButton(
+              onPressed: () => print("pressed 3"),
+              child: Icon(
+                Icons.add_a_photo,
+              ),
+              color: Colors.blueAccent,
+            ),
+            // Icon(Icons.add_circle),
+            // Icon(Icons.add_location),
             // Image(
             //     image: NetworkImage(
             //         'https://images.unsplash.com/photo-1589609966838-5c628d5c1aa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')),
-            // Image(
-            //   image: AssetImage('assets/champs.jpg'),
-            // ),
+            Image(
+              image: AssetImage('assets/champs.jpg'),
+              height: 156,
+            ),
             // short hand for upper syntax
-            Image.asset('assets/comp.jpg'),
+            // Image.asset('assets/comp.jpg'),
             // Image.network(
             //     'https://images.unsplash.com/photo-1589609966838-5c628d5c1aa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80'),
           ],
@@ -64,3 +84,6 @@ class NewApp extends StatelessWidget {
 // get a link of image
 
 // for local edit .yaml file for assets
+// also work on flutter extentions lovely features to shorten the code
+// flatbutton has no shadow 
+// raisedbutton has shadow
