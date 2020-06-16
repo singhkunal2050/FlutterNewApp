@@ -39,27 +39,34 @@ class NewApp extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Icon(
-                    Icons.access_alarm,
-                    color: Colors.red,
-                    size: 80,
+                  Expanded(
+                    flex: 2,
+                    child: Icon(
+                      Icons.access_alarm,
+                      color: Colors.red,
+                      size: 30,
+                    ),
                   ),
                   // expanded widget takes up all the available space
                   Expanded(
+                    flex: 3,
                     child: RaisedButton(
                       onPressed: () => print("pressed"),
                       child: Text("Press"),
                       color: Colors.amberAccent,
                     ),
-                  ),    
-                  RaisedButton.icon(
-                    onPressed: () => print("pressed 2"),
-                    icon: Icon(
-                      Icons.mail,
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: RaisedButton.icon(
+                      onPressed: () => print("pressed 2"),
+                      icon: Icon(
+                        Icons.mail,
+                      ),
+                      label: Text("Send"),
                     ),
-                    label: Text("Send"),
                   ),
                   // Icon(Icons.add_circle),
                   // Icon(Icons.add_location),
