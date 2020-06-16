@@ -26,9 +26,9 @@ class NewApp extends StatelessWidget {
           ),
           child: Center(
               child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
               MystyleText(),
               Padding(
                 child: Text(
@@ -38,7 +38,7 @@ class NewApp extends StatelessWidget {
                 padding: EdgeInsets.all(40),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Icon(
@@ -46,11 +46,14 @@ class NewApp extends StatelessWidget {
                     color: Colors.red,
                     size: 80,
                   ),
-                  RaisedButton(
-                    onPressed: () => print("pressed"),
-                    child: Text("Press"),
-                    color: Colors.amberAccent,
-                  ),
+                  // expanded widget takes up all the available space
+                  Expanded(
+                    child: RaisedButton(
+                      onPressed: () => print("pressed"),
+                      child: Text("Press"),
+                      color: Colors.amberAccent,
+                    ),
+                  ),    
                   RaisedButton.icon(
                     onPressed: () => print("pressed 2"),
                     icon: Icon(
@@ -110,3 +113,5 @@ class NewApp extends StatelessWidget {
 // flatbutton has no shadow
 // raisedbutton has shadow
 // we  can apply only padding prop to a padding widget
+// refactor has alot of amazing options for productivity
+// expanded windgets are very similar to flexbox
