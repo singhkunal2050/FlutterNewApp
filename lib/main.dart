@@ -17,9 +17,9 @@ class NewApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: Container(
-          color: Colors.amber,
+          color: Colors.red[100],
           // margin: EdgeInsets.all(10),
-          margin: EdgeInsets.fromLTRB(5, 10, 5, 10),
+          margin: EdgeInsets.all(2),
           padding: EdgeInsets.symmetric(
             horizontal: 10,
             vertical: 10,
@@ -91,6 +91,17 @@ class NewApp extends StatelessWidget {
               //     image: NetworkImage(
               //         'https://images.unsplash.com/photo-1589609966838-5c628d5c1aa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')),
               Expanded(
+                flex: 5,
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  child: Image(
+                    image: AssetImage('assets/champs.jpg'),
+                    height: 406,
+                  ),
+                ),
+              ),
+              Expanded(
+                flex:2,
                 child: Image(
                   image: AssetImage('assets/champs.jpg'),
                   height: 406,
