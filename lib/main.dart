@@ -90,9 +90,11 @@ class NewApp extends StatelessWidget {
               // Image(
               //     image: NetworkImage(
               //         'https://images.unsplash.com/photo-1589609966838-5c628d5c1aa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')),
-              Image(
-                image: AssetImage('assets/champs.jpg'),
-                height: 106,
+              Expanded(
+                child: Image(
+                  image: AssetImage('assets/champs.jpg'),
+                  height: 406,
+                ),
               ),
               // short hand for upper syntax
               // Image.asset('assets/comp.jpg'),
