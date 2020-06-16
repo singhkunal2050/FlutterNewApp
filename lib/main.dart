@@ -26,7 +26,9 @@ class NewApp extends StatelessWidget {
           ),
           child: Center(
               child: Column(
-            children: [
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
               MystyleText(),
               Padding(
                 child: Text(
@@ -36,7 +38,7 @@ class NewApp extends StatelessWidget {
                 padding: EdgeInsets.all(40),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Icon(
